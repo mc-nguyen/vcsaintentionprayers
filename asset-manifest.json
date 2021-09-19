@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a23dd327.chunk.css",
+    "main.js": "/static/js/main.beb247fa.chunk.js",
+    "main.js.map": "/static/js/main.beb247fa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.da118194.js",
+    "runtime-main.js.map": "/static/js/runtime-main.da118194.js.map",
+    "static/css/2.f2512455.chunk.css": "/static/css/2.f2512455.chunk.css",
+    "static/js/2.2970639c.chunk.js": "/static/js/2.2970639c.chunk.js",
+    "static/js/2.2970639c.chunk.js.map": "/static/js/2.2970639c.chunk.js.map",
+    "static/js/3.a0e0e9fa.chunk.js": "/static/js/3.a0e0e9fa.chunk.js",
+    "static/js/3.a0e0e9fa.chunk.js.map": "/static/js/3.a0e0e9fa.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.a23dd327.chunk.css.map": "/static/css/main.a23dd327.chunk.css.map",
+    "static/js/2.2970639c.chunk.js.LICENSE.txt": "/static/js/2.2970639c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Lora-VariableFont_wght.86de6b10.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da118194.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.2970639c.chunk.js",
+    "static/css/main.a23dd327.chunk.css",
+    "static/js/main.beb247fa.chunk.js"
+  ]
+}
