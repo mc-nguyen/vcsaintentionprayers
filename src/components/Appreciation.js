@@ -1,4 +1,5 @@
 import {Card} from "react-bootstrap";
+import React from "react";
 
 export default function Appreciation() {
     const formStyle = (window.innerWidth > 1040) ? {
@@ -32,6 +33,7 @@ export default function Appreciation() {
         textAlign: "center",
         fontWeight: "bold"
     };
+    document.title = "Thank you for your prayers"
 
     return (
         <Card style={formStyle}>

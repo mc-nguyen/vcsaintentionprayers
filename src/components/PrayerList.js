@@ -36,7 +36,7 @@ export default function PrayerList() {
     };
     const labelStyle = {
         fontFamily: "Lobster",
-        fontSize: 40,
+        fontSize: 20,
         textAlign: "center",
         backgroundColor: "purple",
         color: "white",
@@ -45,9 +45,10 @@ export default function PrayerList() {
     };
     const paragraphStyle = {
         fontFamily: "Lora",
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: "bold"
     };
+    document.title = "VCSA Intentions"
 
     return (
         <div style={{backgroundColor: "rebeccapurple"}}>

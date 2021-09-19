@@ -1,5 +1,5 @@
 import {Form, Row, Col, Button, Card} from "react-bootstrap";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import db from "../database/firebase";
 import {useHistory} from "react-router-dom";
@@ -15,6 +15,15 @@ export default function IntentionForm() {
     const [width, setWidth] = useState(window.innerWidth);
 
     let history = useHistory();
+
+    useEffect(() => {
+        function handleResize() {
+            setWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     function submit(e) {
         e.preventDefault();
@@ -37,42 +46,47 @@ export default function IntentionForm() {
 
     const labelStyle = {
         fontFamily: "Lobster",
-        fontSize: 30
+        fontSize: 20
     };
     const buttonStyle = {
         backgroundImage: "linear-gradient(to right, purple 0%, mediumpurple 51%, purple 100%)",
         border: "none",
         fontFamily: "FleurDeLeah",
         fontWeight: "bold",
-        fontSize: 40,
-        paddingRight: 30
+        fontSize: 30,
+        paddingRight: 20,
+        borderRadius: 10,
+        width: 300,
     };
     const paragraphStyle = {
         fontFamily: "LibreBaskerville",
+        fontSize: 14
     };
     const formStyle = (width > 1040) ? {
         background: "white",
         padding: 10,
         width: "50%",
         position: "fixed",
-        top: "50%",
+        top: "54%",
         left: "50%",
         transform: "translate(-50%, -50%)",
+        borderRadius: 10
     } : {
         background: "white",
         padding: 10,
         margin: "20px"
     };
+    document.title = "VCSA Intention Forms"
     return (
         <Form className="align-items-center" onSubmit={submit} style={formStyle}>
             <Card className="mb-3" style={paragraphStyle}>
                 <Card.Body style={{ marginHeight: 10 }}>
-                    <Card.Title style={{fontWeight: "bolder", fontSize: 30}}>Hello hai Cha and Boards, </Card.Title>
+                    <Card.Title style={{fontWeight: "bolder", fontSize: 20}}>Hello hai Cha and Boards, </Card.Title>
                     <Card.Text style={paragraphStyle}> <p style={{ margin: 10 }}>
                         - This is the form to fill in your prayer requests which we are going to share at the beginning prayer of our meetings. <br/>
                         - Prayers will be collected from the previous meeting (SAT 12:01 AM) to the following FRI by 11:59 PM.<br/>
                         - Spiritual Coordinator is in charge of gathering and sending prayers to the assigned Boards doing prayer of that week meeting.<br/>
-                        -  Boards who are assigned to do prayer might come up with your own techniques to share these intentions.<br/>
+                        - Boards who are assigned to do prayer might come up with your own techniques to share these intentions.<br/>
                         - Please fill this form sincerely since we are going to pray to God these intentions.<br/>
                     </p>
                         <p> Contact Spiritual Coordinator to have assist with inquiries.</p>
