@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Lobster/Lobster-Regular.ttf';
+import './fonts/FleurDeLeah/FleurDeLeah-Regular.ttf';
+import './fonts/LibreBaskerville/LibreBaskerville-Regular.ttf';
+import './fonts/Lora/Lora-VariableFont_wght.ttf';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
