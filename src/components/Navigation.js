@@ -13,8 +13,8 @@ export default function Navigation() {
             <Container>
                 <Navbar.Brand href="/">Intention Form</Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href="/list">Prayer List</Nav.Link>
-                    <Nav.Link href="/prayers">Prayers</Nav.Link>
+                    <Nav.Link href="/intentions">Prayer List</Nav.Link>
+                    <Nav.Link href="/popular-prayers">Prayers</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

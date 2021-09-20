@@ -15,7 +15,7 @@ function App() {
                 <Switch>
                     <Route exact path="/"><IntentionForm/></Route>
                     <Route path="/appreciation"><Appreciation/></Route>
-                    <Route path="/list"><PrayerList/></Route>
+                    <Route path="/intentions"><PrayerList/></Route>
                     <Route path="/popular-prayers"><PopPrayer/></Route>
                 </Switch>
             </div>
